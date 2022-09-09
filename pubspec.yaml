@@ -14,7 +14,6 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   dio:
-  hooks_riverpod:
   flutter_riverpod:
   flutter_native_splash:
 

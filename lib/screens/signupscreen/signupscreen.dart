@@ -1,20 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:med/common/widget/header_widget.dart';
-import 'package:med/constant/text.dart';
+import 'package:med/constant/constants.dart';
 import 'package:med/screens/signupscreen/widget/signup_form.dart';
 
-class SignUpScreen extends StatefulWidget {
+class SignUpScreen extends StatelessWidget {
   const SignUpScreen({Key? key}) : super(key: key);
 
   @override
-  State<SignUpScreen> createState() => _SignUpScreenState();
-}
-
-class _SignUpScreenState extends State<SignUpScreen> {
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
-        resizeToAvoidBottomInset: false,
+        
         body: SingleChildScrollView(
           child: Column(
             children: const [

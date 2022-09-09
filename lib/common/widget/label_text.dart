@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:med/constant/constants.dart';
 
-import 'package:med/constant/colors.dart';
 
 class CommonLabel extends StatelessWidget {
   final String? labelText;

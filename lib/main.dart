@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-
-import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:med/buil_primary_swatch.dart';
-import 'package:med/constant/colors.dart';
 import 'package:med/screens/loginscreen/loginscreen.dart';
+import 'constant/constants.dart';
 
 void main() {
   runApp(const ProviderScope(child: MyApp()));
@@ -15,9 +15,13 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([
+        DeviceOrientation.portraitUp,
+        DeviceOrientation.portraitDown,
+      ]);
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'MED',
+        title: 'UdiiBaba',
         theme: ThemeData(
           primarySwatch: buildMaterialColor(AppColor.themeColor),
           fontFamily: 'Montserrat',

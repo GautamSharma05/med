@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:med/constant/colors.dart';
+import 'package:med/constant/constants.dart';
+
 
 class HeaderWidget extends StatelessWidget {
   final String? heading;
