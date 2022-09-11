@@ -5,6 +5,7 @@ class AppColor {
   static const textColor = Color(0xffFFFFFF);
   static const textBlackColor = Color(0xff000000);
   static const hintColor = Color(0xffc4c4c4);
+  static const backgroundColorBottomNavBar = Color(0xffD1E5FF);
 }
 
 class AppText {
@@ -25,4 +26,5 @@ class AppText {
       'By continuing, you agree to accept our \nPrivacy Policy & Terms of Service.';
   static const acceptTerm = 'I accept the Terms of Use.';
   static const rememberMe = 'Remember Me';
+  static const searchHintText = 'Search for Cloths,Mobile,Electronics';
 }

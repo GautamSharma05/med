@@ -5,9 +5,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:med/common/validation/validation.dart';
 import 'package:med/common/widget/label_text.dart';
 import 'package:med/riverpod/riverpod.dart';
-import 'package:med/screens/loginscreen/widget/login_button.dart';
-import 'package:med/screens/signupscreen/signupscreen.dart';
-import '../../../constant/constants.dart';
+import 'package:med/features/screens/loginscreen/widget/login_button.dart';
+import 'package:med/features/screens/signupscreen/signupscreen.dart';
+import '../../../../constant/constants.dart';
 
 class LoginForm extends ConsumerStatefulWidget {
   const LoginForm({super.key});
@@ -74,8 +74,12 @@ class _LoginFormState extends ConsumerState<LoginForm> {
             Row(
               children: [
                 Checkbox(
-                  value: false,
-                  onChanged: (newValue) {},
+                  value: provider.checkValue,
+                  onChanged: (value) {
+                    setState(() {
+                  provider.checkValue = value ?? false;
+                });
+                  },
                   //  <-- leading Checkbox
                 ),
                 const Text(

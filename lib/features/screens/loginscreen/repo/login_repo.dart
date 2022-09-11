@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:med/features/screens/screens.dart';
 
 class LoginRepo extends ChangeNotifier {
   bool checkValue = false;
@@ -8,7 +9,7 @@ class LoginRepo extends ChangeNotifier {
 
   submitData(context) {
     if (loginKey.currentState!.validate()) {
-      print('Success');
+     Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const ScreenControl()));
     }
   }
 }

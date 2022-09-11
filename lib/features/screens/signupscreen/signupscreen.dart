@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:med/common/widget/header_widget.dart';
 import 'package:med/constant/constants.dart';
-import 'package:med/screens/signupscreen/widget/signup_form.dart';
+import 'package:med/features/screens/signupscreen/widget/signup_form.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({Key? key}) : super(key: key);

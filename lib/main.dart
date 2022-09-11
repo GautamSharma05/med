@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:med/buil_primary_swatch.dart';
-import 'package:med/screens/loginscreen/loginscreen.dart';
+import 'package:med/features/screens/loginscreen/loginscreen.dart';
 import 'constant/constants.dart';
 
 void main() {

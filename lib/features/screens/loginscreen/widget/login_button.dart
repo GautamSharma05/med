@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:med/constant/constants.dart';
-import '../../../riverpod/riverpod.dart';
+import 'package:med/riverpod/riverpod.dart';
+import '../../../../constant/constants.dart';
 
-class SignUpButton extends ConsumerWidget {
-  const SignUpButton({Key? key}):super(key: key);
+
+class LoginButton extends ConsumerWidget {
+  const LoginButton({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context,WidgetRef ref) {
-    final provider = ref.watch(signUpProvider);
+    final provider = ref.watch(loginProvider);
     return SizedBox(
       width: 327.0,
       height: 48.0,
@@ -16,9 +17,11 @@ class SignUpButton extends ConsumerWidget {
         onPressed: () {
           provider.submitData(context);
         },
-        style: ElevatedButton.styleFrom(shape: const StadiumBorder()),
+        style: ElevatedButton.styleFrom(
+          shape: const StadiumBorder(),
+        ),
         child: const Text(
-          AppText.signUpButtonText,
+          AppText.loginHeadingText,
           style: TextStyle(
             fontSize: 12,
             color: AppColor.textColor,

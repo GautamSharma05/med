@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:med/constant/constants.dart';
 
-import '../../../riverpod/riverpod.dart';
+import '../../../../riverpod/riverpod.dart';
 
 class AcceptTermsAndConditions extends StatefulWidget {
   const AcceptTermsAndConditions({super.key});

@@ -4,20 +4,19 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:med/common/validation/validation.dart';
 import 'package:med/common/widget/label_text.dart';
 import 'package:med/constant/constants.dart';
-import 'package:med/screens/signupscreen/widget/signup_accept_terms.dart';
-import 'package:med/screens/signupscreen/widget/signup_button.dart';
+import 'package:med/features/screens/signupscreen/widget/signup_accept_terms.dart';
+import 'package:med/features/screens/signupscreen/widget/signup_button.dart';
 
-import '../../../riverpod/riverpod.dart';
+import '../../../../riverpod/riverpod.dart';
 
 class SignupForm extends ConsumerStatefulWidget {
   const SignupForm({Key? key}) : super(key: key);
 
   @override
-  // ignore: library_private_types_in_public_api
-  _SignupFormState createState() => _SignupFormState();
+  SignupFormState createState() => SignupFormState();
 }
 
-class _SignupFormState extends ConsumerState<SignupForm> {
+class SignupFormState extends ConsumerState<SignupForm> {
   bool _obscureText = true;
 
   void _toggle() {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:med/common/widget/header_widget.dart';
-import 'package:med/screens/loginscreen/widget/loginform.dart';
-import '../../constant/constants.dart';
+import 'package:med/features/screens/loginscreen/widget/loginform.dart';
+import '../../../constant/constants.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
