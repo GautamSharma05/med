@@ -7,7 +7,7 @@ import 'package:med/constant/constants.dart';
 class CustomBottomBar extends StatefulWidget {
   final PageController controller;
   int index;
- CustomBottomBar({super.key, required this.controller,required this.index});
+  CustomBottomBar({super.key, required this.controller, required this.index});
 
   @override
   State<CustomBottomBar> createState() => _CustomBottomBarState();
@@ -16,8 +16,6 @@ class CustomBottomBar extends StatefulWidget {
 class _CustomBottomBarState extends State<CustomBottomBar> {
   @override
   Widget build(BuildContext context) {
-  
-
     return Container(
       color: AppColor.themeColor,
       child: Padding(
@@ -31,8 +29,7 @@ class _CustomBottomBarState extends State<CustomBottomBar> {
           padding: const EdgeInsets.all(16.0),
           tabs: const [
             GButton(icon: LineIcons.home, text: 'Home'),
-            
-            GButton(icon: LineIcons.bell, text: 'Notification'),
+            GButton(icon: LineIcons.thLarge, text: 'Categories'),
             GButton(icon: LineIcons.user, text: 'Account'),
             GButton(icon: LineIcons.shoppingCart, text: 'Cart'),
           ],
@@ -43,7 +40,6 @@ class _CustomBottomBarState extends State<CustomBottomBar> {
             });
             widget.controller.jumpToPage(index);
           },
-          
         ),
       ),
     );

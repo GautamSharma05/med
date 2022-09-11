@@ -3,6 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:med/common/widget/app_bar.dart';
 import 'package:med/common/widget/bottom_navigation.dart';
 import 'package:med/features/screens/accountscreen/account_screen.dart';
+import 'package:med/features/screens/cartscreen/cart_screen.dart';
+import 'package:med/features/screens/categoryscreen/category_screen.dart';
 import 'package:med/features/screens/homescreen/home_screen.dart';
 
 class ScreenControl extends ConsumerStatefulWidget {
@@ -18,9 +20,9 @@ class ScreenControlState extends ConsumerState<ScreenControl> {
   int index = 0;
   List screen = const [
     HomeScreen(),
-    HomeScreen(),
+    CategoryScreen(),
     AccountScreen(),
-    AccountScreen()
+    CartScreen()
   ];
 
   @override
