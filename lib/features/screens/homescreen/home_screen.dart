@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:med/features/screens/homescreen/widgets/crousel_slider.dart';
 
 
 class HomeScreen extends StatefulWidget {
@@ -12,8 +13,14 @@ class _HomeScreenState extends State<HomeScreen> {
   
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body:Center(child: Text('Home Page'),)
+    return  Scaffold(
+      body:SingleChildScrollView(
+        child: Column(
+          children: const [
+            CarouselSliders(),
+          ],
+        ),
+      )
     );
   }
 }
