@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:med/buil_primary_swatch.dart';
 import 'package:med/features/screens/loginscreen/loginscreen.dart';
+import 'package:med/features/screens/screens.dart';
 import 'constant/constants.dart';
 
 void main() {
@@ -26,6 +27,6 @@ class MyApp extends StatelessWidget {
           primarySwatch: buildMaterialColor(AppColor.themeColor),
           fontFamily: 'Montserrat',
         ),
-        home: const LoginScreen());
+        home: const ScreenControl());
   }
 }

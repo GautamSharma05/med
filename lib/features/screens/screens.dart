@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:med/common/widget/app_bar.dart';
 import 'package:med/common/widget/bottom_navigation.dart';
 import 'package:med/features/screens/accountscreen/account_screen.dart';
 import 'package:med/features/screens/cartscreen/cart_screen.dart';
@@ -29,8 +28,9 @@ class ScreenControlState extends ConsumerState<ScreenControl> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: const CustomAppbar(),
+       
         body: PageView.builder(
+          physics: const NeverScrollableScrollPhysics(),
             itemCount: 4,
             controller: pageController,
             onPageChanged: (page) {
