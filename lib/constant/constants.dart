@@ -48,4 +48,5 @@ class AppText {
   static const feedbackAndInformation = 'Feedback & Information';
   static const termPoliciesAndLicenses = 'Terms, Policies & Licenses';
   static const browseFaqs = 'Browse FAQs';
+  static const logOut = 'Log Out';
 }

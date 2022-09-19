@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'UdiiBaba',
         theme: ThemeData(
+          scaffoldBackgroundColor: AppColor.scaffoldBackgroungColor,
           primarySwatch: buildMaterialColor(AppColor.themeColor),
           fontFamily: 'Montserrat',
         ),
