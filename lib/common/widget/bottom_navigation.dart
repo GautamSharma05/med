@@ -18,8 +18,8 @@ class _CustomBottomBarState extends State<CustomBottomBar> {
   Widget build(BuildContext context) {
     return Container(
       color: AppColor.themeColor,
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 20.0),
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 12.0),
         child: GNav(
           backgroundColor: AppColor.themeColor,
           tabBackgroundColor: Colors.grey.shade100.withOpacity(0.5),
@@ -31,7 +31,7 @@ class _CustomBottomBarState extends State<CustomBottomBar> {
             GButton(icon: LineIcons.home, text: 'Home'),
             GButton(icon: LineIcons.thLarge, text: 'Categories'),
             GButton(icon: LineIcons.user, text: 'Account'),
-            GButton(icon: LineIcons.shoppingCart, text: 'Cart'),
+            GButton(icon: LineIcons.shoppingBag, text: 'Shopping Bag'),
           ],
           selectedIndex: widget.index,
           onTabChange: (index) {

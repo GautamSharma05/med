@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:med/constant/constants.dart';
 
 class CommonAppBarText extends StatelessWidget {
   final String text;
@@ -9,8 +10,9 @@ class CommonAppBarText extends StatelessWidget {
     return Text(
       text,
       style: const TextStyle(
-        fontSize: 18,
-        fontWeight: FontWeight.w300),
+        color: AppColor.textBlackColor,
+        fontSize: 16,
+        fontWeight: FontWeight.w400),
     );
   }
 }

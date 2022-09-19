@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:med/common/widget/common_app_bar.dart';
+import 'package:med/common/widget/common_app_bar_text.dart';
 import 'package:med/constant/constants.dart';
 import 'package:med/features/screens/accountscreen/widgets/account_detail.dart';
 import 'package:med/features/screens/accountscreen/widgets/account_earn_with.dart';
@@ -14,7 +14,11 @@ class AccountScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: const CommonAppbar(title: AppText.accountAppBarText,),
+        appBar: AppBar(
+          backgroundColor: AppColor.textColor,
+          title: const CommonAppBarText(text: AppText.accountAppBarText),
+          elevation: 0.5,
+        ),
         body: SingleChildScrollView(
           child: SafeArea(
               child: Column(children: const [
@@ -43,4 +47,3 @@ class AccountScreen extends StatelessWidget {
         ));
   }
 }
-

@@ -30,9 +30,9 @@ class AppText {
   static const rememberMe = 'Remember Me';
   static const searchHintText = 'Search for Cloths,Mobile,Electronics';
   static const userName = 'Hey! Gautam Sharma';
-  static const accountAppBarText = 'My Account';
-  static const cartAppBarText = 'My Cart';
-   static const categoryAppBarText = 'Category';
+  static const accountAppBarText = 'Profile';
+  static const cartAppBarText = 'SHOPPING BAG';
+   static const categoryAppBarText = 'CATEGORY';
   static const orders= 'Orders';
   static const coupons= 'Coupons';
   static const wishlist= 'Wishlist';
@@ -51,4 +51,5 @@ class AppText {
   static const termPoliciesAndLicenses = 'Terms, Policies & Licenses';
   static const browseFaqs = 'Browse FAQs';
   static const logOut = 'Log Out';
+  static const popularOnUdiiBaba = 'POPULAR ON UDIIBABA';
 }
