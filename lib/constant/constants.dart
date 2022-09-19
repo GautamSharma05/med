@@ -52,4 +52,11 @@ class AppText {
   static const browseFaqs = 'Browse FAQs';
   static const logOut = 'Log Out';
   static const popularOnUdiiBaba = 'POPULAR ON UDIIBABA';
+  static const tshirt = 'Tshirts';
+  static const kurtas = 'Kurtas';
+  static const brandName_1 = 'Roadster';
+  static const brandName_2 = 'HRX';
+  static const brandName_3 = 'anouk';
+  static const brandName_4 = 'W';
+  static const nothingInBag = "There is nothing in your bag. Let's add some items";
 }
