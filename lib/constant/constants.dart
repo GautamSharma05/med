@@ -31,6 +31,8 @@ class AppText {
   static const searchHintText = 'Search for Cloths,Mobile,Electronics';
   static const userName = 'Hey! Gautam Sharma';
   static const accountAppBarText = 'My Account';
+  static const cartAppBarText = 'My Cart';
+   static const categoryAppBarText = 'Category';
   static const orders= 'Orders';
   static const coupons= 'Coupons';
   static const wishlist= 'Wishlist';
