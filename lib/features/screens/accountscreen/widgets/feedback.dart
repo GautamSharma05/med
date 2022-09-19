@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:med/common/widget/common_text.dart';
 import 'package:med/constant/constants.dart';
+import 'package:med/features/screens/accountscreen/pages/browsefaq/browse_faq.dart';
+import 'package:med/features/screens/accountscreen/pages/termandpolicy/term_policy.dart';
 
 class FeedbackAndInformation extends StatelessWidget {
   const FeedbackAndInformation({super.key});
@@ -14,10 +16,10 @@ class FeedbackAndInformation extends StatelessWidget {
       height: 160,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: const [
-          Padding(
-            padding: EdgeInsets.only(left: 16.0, top: 8.0, bottom: 8.0),
-            child: Text(
+        children: [
+          Container(
+            padding: const EdgeInsets.only(left: 16.0, top: 8.0, bottom: 8.0),
+            child: const Text(
               AppText.feedbackAndInformation,
               style: TextStyle(
                   color: AppColor.textBlackColor,
@@ -26,18 +28,33 @@ class FeedbackAndInformation extends StatelessWidget {
             ),
           ),
           ListTile(
-            leading: Icon(color: AppColor.themeColor, LineIcons.copy),
-            title: CommonText(
+            leading: const Icon(color: AppColor.themeColor, LineIcons.copy),
+            title: const CommonText(
               text: AppText.termPoliciesAndLicenses,
             ),
-            trailing: Icon(LineIcons.angleRight),
+            trailing: IconButton(
+              icon: const Icon(LineIcons.angleRight),
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const TermAndPolicy()));
+              },
+            ),
           ),
           ListTile(
-            leading: Icon(color: AppColor.themeColor, LineIcons.questionCircle),
-            title: CommonText(
+            leading: const Icon(
+                color: AppColor.themeColor, LineIcons.questionCircle),
+            title: const CommonText(
               text: AppText.browseFaqs,
             ),
-            trailing: Icon(LineIcons.angleRight),
+            trailing: IconButton(
+              icon: const Icon(LineIcons.angleRight),
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const BrowseFaq()));
+              },
+            ),
           ),
         ],
       ),

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:med/common/widget/common_text.dart';
 import 'package:med/constant/constants.dart';
 
 class LogOutButton extends StatelessWidget {
