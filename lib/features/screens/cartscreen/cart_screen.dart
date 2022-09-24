@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:med/common/widget/common_app_bar_text.dart';
 import 'package:med/constant/constants.dart';
+import 'package:med/features/screens/accountscreen/pages/wishlist/wishlist.dart';
 import 'package:med/features/screens/cartscreen/widgets/empty_bag.dart';
 import 'package:med/features/screens/cartscreen/widgets/popular_item_list.dart';
 
@@ -17,7 +18,9 @@ class CartScreen extends StatelessWidget {
       title: const CommonAppBarText(text: AppText.cartAppBarText),
       actions: [
         IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => const WishList()));
+            },
             icon: const Icon(
               LineIcons.heart,
               color: AppColor.textBlackColor,
