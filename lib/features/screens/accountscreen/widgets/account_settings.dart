@@ -14,7 +14,7 @@ class AccountSettings extends StatelessWidget {
     return Container(
       color: AppColor.textColor,
       width: double.infinity,
-      height: 210,
+      height: MediaQuery.of(context).size.height * 0.27,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

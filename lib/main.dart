@@ -15,8 +15,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
-      statusBarColor: AppColor.themeColor,
+
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light.copyWith(
+      statusBarColor: AppColor.textColor,
     ));
     SystemChrome.setPreferredOrientations([
       DeviceOrientation.portraitUp,
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           scaffoldBackgroundColor: AppColor.scaffoldBackgroungColor,
           primarySwatch: buildMaterialColor(AppColor.themeColor),
-          fontFamily: 'Montserrat',
+          fontFamily: 'PoppinsRegular',
         ),
         home: const ScreenControl());
   }

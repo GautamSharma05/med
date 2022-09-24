@@ -13,7 +13,7 @@ class EarnWithUdiiBaba extends StatelessWidget {
     return Container(
       color: AppColor.textColor,
       width: double.infinity,
-      height: 160,
+      height:  MediaQuery.of(context).size.height * 0.20,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children:  [

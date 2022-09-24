@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:med/constants/constants.dart';
+import 'package:med/features/screens/accountscreen/pages/coupons/coupouns.dart';
+import 'package:med/features/screens/accountscreen/pages/helpcenter/help_center.dart';
+import 'package:med/features/screens/accountscreen/pages/orders/orders.dart';
+import 'package:med/features/screens/accountscreen/pages/wishlist/wishlist.dart';
 import 'package:med/features/screens/accountscreen/widgets/button_widgets.dart';
 
 class AccountDetail extends StatelessWidget {
@@ -11,7 +15,7 @@ class AccountDetail extends StatelessWidget {
     return Container(
       color: AppColor.textColor,
       width: double.infinity,
-      height: 190,
+      height:  MediaQuery.of(context).size.height * 0.22,
       child: Column(
         children: [
           const ListTile(
@@ -22,9 +26,9 @@ class AccountDetail extends StatelessWidget {
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: const [
-              AccountButtons(text: AppText.orders, icon: LineIcons.shoppingBag),
-              AccountButtons(text: AppText.wishlist, icon: LineIcons.heart),
+            children:  const [
+              AccountButtons(text: AppText.orders, icon: LineIcons.shoppingBag,navigate:  Orders(),),
+              AccountButtons(text: AppText.wishlist, icon: LineIcons.heart,navigate: WishList() ),
             ],
           ),
           const SizedBox(
@@ -32,10 +36,10 @@ class AccountDetail extends StatelessWidget {
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: const [
-              AccountButtons(text: AppText.coupons, icon: LineIcons.gift),
+            children:  const [
+              AccountButtons(text: AppText.coupons, icon: LineIcons.gift,navigate: Coupons() ),
               AccountButtons(
-                  text: AppText.helpCenter, icon: LineIcons.headphones),
+                  text: AppText.helpCenter, icon: LineIcons.headphones,navigate:HelpCenter()),
             ],
           ),
         ],

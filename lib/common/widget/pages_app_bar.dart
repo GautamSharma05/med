@@ -31,6 +31,7 @@ class PageAppBar extends StatelessWidget {
                    style: const TextStyle(
                       color: AppColor.textColor,
                       fontSize: 18,
+                      letterSpacing: 1.5,
                       fontWeight: FontWeight.w500),
                    
                   ),
