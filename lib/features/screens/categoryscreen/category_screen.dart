@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:med/common/widget/common_app_bar_text.dart';
-import 'package:med/constant/constants.dart';
+import 'package:med/constants/constants.dart';
 
 class CategoryScreen extends StatelessWidget {
   const CategoryScreen({super.key});

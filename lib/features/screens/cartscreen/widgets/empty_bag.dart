@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:med/constant/constants.dart';
+import 'package:med/constants/constants.dart';
 
 class EmptyBag extends StatelessWidget {
   const EmptyBag({super.key});

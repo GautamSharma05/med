@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:med/riverpod/riverpod.dart';
-import '../../../../constant/constants.dart';
+import '../../../../constants/constants.dart';
 
 
 class LoginButton extends ConsumerWidget {

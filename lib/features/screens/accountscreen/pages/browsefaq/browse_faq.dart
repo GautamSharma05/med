@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:med/common/widget/pages_app_bar.dart';
-import 'package:med/constant/constants.dart';
+import 'package:med/constants/constants.dart';
 
 class BrowseFaq extends StatelessWidget {
   const BrowseFaq({super.key});

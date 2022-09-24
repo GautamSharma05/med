@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
-import 'package:med/constant/constants.dart';
+import 'package:med/constants/constants.dart';
 import 'package:med/features/screens/accountscreen/widgets/button_widgets.dart';
 
 class AccountDetail extends StatelessWidget {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:med/constant/constants.dart';
+import 'package:med/constants/constants.dart';
 
 import '../../../../riverpod/riverpod.dart';
 

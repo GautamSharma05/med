@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:med/common/widget/common_app_bar_text.dart';
-import 'package:med/constant/constants.dart';
+import 'package:med/constants/constants.dart';
 import 'package:med/features/screens/accountscreen/widgets/account_detail.dart';
 import 'package:med/features/screens/accountscreen/widgets/account_earn_with.dart';
 import 'package:med/features/screens/accountscreen/widgets/account_my_activity.dart';

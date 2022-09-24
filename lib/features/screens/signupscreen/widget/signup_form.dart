@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:med/common/validation/validation.dart';
 import 'package:med/common/widget/label_text.dart';
-import 'package:med/constant/constants.dart';
+import 'package:med/constants/constants.dart';
 import 'package:med/features/screens/signupscreen/widget/signup_accept_terms.dart';
 import 'package:med/features/screens/signupscreen/widget/signup_button.dart';
 

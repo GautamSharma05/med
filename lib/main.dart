@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:med/buil_primary_swatch.dart';
 import 'package:med/features/screens/screens.dart';
-import 'constant/constants.dart';
+import 'constants/constants.dart';
 
 void main() {
   runApp(const ProviderScope(child: MyApp()));

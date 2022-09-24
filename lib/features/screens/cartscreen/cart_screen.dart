@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:med/common/widget/common_app_bar_text.dart';
-import 'package:med/constant/constants.dart';
+import 'package:med/constants/constants.dart';
 import 'package:med/features/screens/accountscreen/pages/wishlist/wishlist.dart';
 import 'package:med/features/screens/cartscreen/widgets/empty_bag.dart';
 import 'package:med/features/screens/cartscreen/widgets/popular_item_list.dart';

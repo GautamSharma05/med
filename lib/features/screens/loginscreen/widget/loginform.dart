@@ -7,7 +7,7 @@ import 'package:med/common/widget/label_text.dart';
 import 'package:med/riverpod/riverpod.dart';
 import 'package:med/features/screens/loginscreen/widget/login_button.dart';
 import 'package:med/features/screens/signupscreen/signupscreen.dart';
-import '../../../../constant/constants.dart';
+import '../../../../constants/constants.dart';
 
 class LoginForm extends ConsumerStatefulWidget {
   const LoginForm({super.key});
